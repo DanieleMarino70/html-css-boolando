@@ -1,0 +1,47 @@
+/* HEADER */
+
+.header-head{
+    position: fixed;
+    width: 100%;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+
+    /* debug */
+    background-color: #ff6900;
+}
+
+.header-nav{
+    display: flex;
+    min-height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.logo{
+    width: 20%;
+}
+
+.people-clothes > li{
+    display: inline-block;
+    
+}
+
+/* MAIN */
+
+/* main{
+    padding-top: 10rem;
+}
+
+.main-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.col{
+    width: calc(100% / 3 - 40px);
+} */
