@@ -4,8 +4,7 @@
     position: fixed;
     width: 100%;
     min-height: 100px;
-    justify-content: space-between;
-    align-items: center;
+    z-index: 1;
 
     /* debug */
     background-color: #ff6900;
@@ -22,17 +21,20 @@
 }
 
 .logo{
-    width: 20%;
+    width: 15%;
+    
+    cursor: pointer;
 }
 
 .people-clothes > li{
     display: inline-block;
+    margin-right: 0.2rem;
     
 }
 
-/* MAIN */
+/* MAIN  */
 
-/* main{
+main{
     padding-top: 10rem;
 }
 
@@ -43,5 +45,87 @@
 }
 
 .col{
-    width: calc(100% / 3 - 40px);
-} */
+    width: calc(100% / 3 - 3rem);
+}
+
+.brand-subtitle,
+.old-price,
+.current-price{
+    font-size: 0.9rem;
+}
+
+.product-name,
+.current-price{
+    font-weight: bold;
+}
+
+.current-price{
+    color: red;
+}
+
+.old-price{
+    text-decoration: line-through;
+}
+
+.current-price::after,
+.old-price::after{
+    content: ' € ';
+}
+
+.box-images{
+    display: inline-block;
+    position: relative;
+}
+
+.box-images:hover > .overlay{
+    display: none;
+}
+.overlay{
+    position:absolute;
+    right: 0;
+}
+
+
+.heart{
+    position: absolute;
+    font-weight: bold;
+    font-size: 2rem;
+    top: 1.2rem;
+    right: 0;
+    background: white;
+    width: 3rem;
+    text-align: center;
+}
+
+.heart:hover{
+    color: red;
+}
+
+.badge{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    bottom: 3.5rem;
+    margin-right: 0.5rem;
+    
+}
+
+/* FOOTER */
+
+
+.footer-head{
+    min-height: 100px;
+    background-color: #1a1a1a;
+    margin-top: 2rem;
+    color: white;
+}
+
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+

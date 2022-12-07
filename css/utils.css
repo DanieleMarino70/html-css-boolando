@@ -1,9 +1,9 @@
 :root {
-	--space-xs: 5px;
-	--space-sm: 10px;
-	--space-md: 15px;
-	--space-lg: 25px;
-	--space-xl: 50px;
+	--space-xs: 0.5rem;
+	--space-sm: 1rem;
+	--space-md: 1.5rem;
+	--space-lg: 2rem;
+	--space-xl: 3rem;
 }
 
 /* UTILS */
@@ -23,8 +23,25 @@
 	display: flex;
 }
 
+.absolute{
+	position: absolute;
+}
+.bg-green{
+	background-color: green;
+	border: 5px solid green;
+	
+	
+}
 
+.bg-red{
+	background-color: red;
+	border: 5px solid red;
+	
+}
 
+.cs-pointer{
+	cursor: pointer;
+}
 
 /* PADDING */
 
@@ -228,4 +245,39 @@
 
 .ml5 {
 	margin-left: var(--space-xl);
+}
+
+/* FONT SIZE */
+
+.ft-size1{
+	font-size: var(--space-xs);
+}
+.ft-size2{
+	font-size: var(--space-sm);
+}
+.ft-size3{
+	font-size: var(--space-md);
+}
+.ft-size4{
+	font-size: var(--space-lg);
+}
+.ft-size5{
+	font-size: var(--space-xl);
+}
+
+/* GAP */
+.fl-gap1{
+	gap: var(--space-xs);
+}
+.fl-gap2{
+	gap: var(--space-sm);
+}
+.fl-gap3{
+	gap: var(--space-md);
+}
+.fl-gap4{
+	gap: var(--space-lg);
+}
+.fl-gap5{
+	gap: var(--space-xl);
 }
